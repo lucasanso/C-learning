@@ -1,0 +1,1 @@
+Open, Close, Read, Print, Write, Save and Destroy. 
