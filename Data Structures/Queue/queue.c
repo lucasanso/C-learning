@@ -15,7 +15,7 @@ void imprimirFila(Queue *fila){
     }
 }
 
-void insereFila(Queue **fila, int n){ //sempre início
+void insereFila(Queue **fila, int n){ //adiciona-se na retaguarda.
     Queue *new = malloc(sizeof(Queue));
     if(!new){
         printf("Erro.\n");
@@ -34,7 +34,7 @@ void insereFila(Queue **fila, int n){ //sempre início
     }
 }
 
-void removerFila(Queue **fila){ //sempre início
+void removerFila(Queue **fila){ //sempre início.
     if(*fila == NULL){
         printf("A fila está vazia.\n");
     }
@@ -42,8 +42,6 @@ void removerFila(Queue **fila){ //sempre início
     *fila = (*fila)->ant;
     free(aux);
 }
-
-
 
 int main(){
     Queue *filosa = NULL;
