@@ -21,7 +21,7 @@ void insere_no_comeco (CAIXA **lista, int n){
     CAIXA *new = malloc(sizeof(CAIXA));
     if(!new){
         printf("An error was ocorred.\n");
-        return; //se não me engano, causa o fim da execução da função.
+        return; 
     }
     new->ant = NULL;
     new->n = n;
